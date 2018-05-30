@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context="com.example.jamal.sqliteandcontextmenu.MainActivity"
+    >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="description produit"
+        android:textSize="15sp"
+        android:id="@+id/description"
+        />
+    <EditText
+        android:id="@+id/prix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="prix produit"
+        android:inputType="numberDecimal"
+        android:textSize="15sp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter le produit"
+        android:id="@+id/btnAjouter"
+        android:onClick="ajouter_produit"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/listeView"
+        android:divider="#893"
+        android:dividerHeight="3dp"
+        android:layout_height="wrap_content">
+    </ListView>
+</LinearLayout>
